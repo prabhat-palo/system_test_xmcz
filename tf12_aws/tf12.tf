@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "public_read" {
   acl = "private"
 }
 resource "aws_s3_bucket" "public_read_write" {
-  acl = "public-read-write"
+  acl = "private"
 
   bucket = "foo_name"
   versioning {
